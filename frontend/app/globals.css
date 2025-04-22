@@ -1,0 +1,29 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+/* Optional: Base layout reset */
+/* body {
+  @apply min-h-screen bg-white text-black dark:bg-black dark:text-white antialiased;
+} */
+html {
+  background-color: #000000;   /* Equivalent to bg-black */
+  color: #ffffff;              /* Equivalent to text-white */
+  font-family: system-ui, sans-serif;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #000000;  /* fallback again */
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
